@@ -1,0 +1,148 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+
+<html>
+
+<head>
+
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+
+<title>View Cart</title>
+
+<style type="text/css">
+
+body
+
+{
+
+   background: #FFFFFF;
+
+}
+
+.nopcart
+
+{
+
+   background: #464444;
+
+   border: 1px;
+
+   color: #FFFFFF;
+
+   font-family: Arabic Transparent; 
+
+   font-size: 13px;
+
+}
+
+.nopheader
+
+{
+
+   background: #464444;
+
+   color: #FFFFFF;
+
+   font-family: Arabic Transparent; 
+
+   font-size: 13px;
+
+}
+
+.nopentry
+
+{
+
+   background: #FFFFFF;
+
+   color: #464444;
+
+   font-family: Arabic Transparent; 
+
+   font-size: 13px;
+
+}
+
+.noptotal
+
+{
+
+   background: #FFFFFF;
+
+   color: #464444;
+
+   font-family: Arabic Transparent; 
+
+   font-size: 13px;
+
+}
+
+.nopbutton
+
+{
+
+   background: #FFFFFF;
+
+   color: #464444;
+
+   font-family: Arabic Transparent; 
+
+   font-size: 13px;
+
+}
+
+</style>
+
+<script type="text/javascript" src="./language-en.js"></script>
+
+<script type="text/javascript" src="./nopcart.js"></script>
+
+<script type="text/javascript">
+
+   MonetarySymbol = 'Php';
+
+   DisplayNotice = true;
+
+   DisplayShippingColumn = false;
+
+   DisplayShippingRow    = false;
+
+   DisplayTaxRow         = false;
+
+   TaxRate               = 0.0;
+
+   TaxByRegion           = false;
+
+   TaxPrompt             = 'For tax purposes, please select if you are an Arizona resident before continuing';
+
+   TaxablePrompt         = 'Arizona Residents';
+
+   NonTaxablePrompt      = 'Other States';
+
+   MinimumOrder          = 1;
+
+   MinimumOrderPrompt    = 'Your order is below our minimum order, please order more before checking out.';
+
+   PaymentProcessor      = '';
+
+</script>
+
+</head>
+
+<body>
+
+<form action="nop_checkout.php" method="get" target="_parent" onsubmit="return ValidateCart(this)">
+
+<script type="text/javascript">
+
+   ManageCart();
+
+</script>
+
+<input type="submit" value="Check out">
+
+</form>
+
+</body>
+
+</html>
+
